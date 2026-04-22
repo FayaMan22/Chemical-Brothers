@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import { useCart } from "../../context/CartContext";
 import { FaShoppingCart } from "react-icons/fa";
+import { useState } from "react";
 
 
 export default function Navbar() {
@@ -12,6 +13,8 @@ export default function Navbar() {
 
    const linkClass = ({ isActive }) =>
     isActive ? "nav-link active" : "nav-link";
+
+   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className="navbar">
@@ -29,6 +32,8 @@ export default function Navbar() {
           </NavLink>
         <NavLink to="/contact" className={linkClass}>Contact</NavLink>
       </div>
+      <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)} > ☰
+      </button>
     </nav>
   );
 }

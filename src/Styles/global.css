@@ -41,6 +41,7 @@ body {
 .nav-links {
   display: flex;
   gap: 28px;
+  flex-wrap: wrap;
 }
 
 .nav-link {
@@ -288,4 +289,37 @@ body {
 .cart-icon {
   font-size: 1.4rem;
   color: white;
+}
+
+/* Hide hamburger on desktop */
+.menu-btn {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #0a2540;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
 }
