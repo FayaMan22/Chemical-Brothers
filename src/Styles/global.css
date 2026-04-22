@@ -1,0 +1,291 @@
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-container {
+  flex: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background-color: #0a2540;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 1000;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #b9e3ff;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #00c853;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0a2540;
+  color: white;
+  margin-top: 40px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90vh;
+  padding: 60px 8%;
+  background: linear-gradient(135deg, #f8fbff 0%, #eaf4ff 50%, #dfefff 100%);
+  overflow: hidden;
+  gap: 30px;
+}
+
+.hero-left {
+  flex: 1;
+  z-index: 2;
+}
+
+.hero-right {
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-20px);
+}
+
+.hero-left h1 {
+  font-size: 3.4rem;
+  line-height: 1.05;
+  margin-bottom: 20px;
+  color: #0a2540;
+  max-width: 600px;
+}
+
+.hero-left p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #4b5b6b;
+  max-width: 520px;
+  margin-bottom: 30px;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.12));
+}
+
+.shop-btn {
+  display: inline-block;
+  width: fit-content;
+  padding: 15px 32px;
+  border: none;
+  border-radius: 999px;
+  background: #0077cc;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.shop-btn:hover {
+  background: #005fa3;
+  transform: translateY(-2px);
+}
+
+.shop-btn {
+  width: fit-content;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  background: #0077cc;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.shop-btn:hover {
+  background: #005fa3;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #00c853;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: auto;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+
+.feature {
+  max-width: 200px;
+  text-align: center;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+.product-detail {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+}
+
+.product-detail img {
+  width: 300px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+
+  background: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease;
+}
+
+.product-info {
+  max-width: 500px;
+}
+
+.product-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.secondary-btn {
+  padding: 10px 20px;
+  background: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.secondary-btn:hover {
+  background: #005fa3;
+}
+
+.cart-message {
+  margin-top: 12px;
+  color: green;
+  font-weight: 500;
+}
+
+.cart-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cart-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  font-size: 1.4rem;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 3px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.cart-icon {
+  font-size: 1.4rem;
+  color: white;
+}
