@@ -89,7 +89,7 @@ body {
 }
 
 .hero-right {
-  flex: 1.2;
+  flex: 1.4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,9 +113,8 @@ body {
 }
 
 .hero-image {
-  width: 100%;
-  max-width: 650px;
-  height: auto;
+  width: 150%;
+  height: 200%;
   object-fit: contain;
   display: block;
   filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.12));
