@@ -89,7 +89,7 @@ body {
 }
 
 .hero-right {
-  flex: 1.4;
+  flex: 1.2;
   display: flex;
   justify-content: center;
   align-items: center;
