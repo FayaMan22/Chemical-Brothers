@@ -101,7 +101,7 @@ body {
   line-height: 1.05;
   margin-bottom: 20px;
   color: #0a2540;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .hero-left p {
@@ -321,4 +321,20 @@ body {
   .nav-links.open {
     display: flex;
   }
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 16px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.no-results {
+  margin-top: 20px;
+  color: #777;
+  font-style: italic;
 }
